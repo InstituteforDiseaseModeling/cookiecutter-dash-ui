@@ -1,8 +1,16 @@
 /.idea/.name
+<<<<<<< HEAD
 /.idea/cookiecutter-dash-ui.iml
+=======
+/.idea/workspace.xml
+>>>>>>> 60baa65 (Initial commit)
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/inspectionProfiles/profiles_settings.xml
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/vcs.xml
+<<<<<<< HEAD
 /.idea/workspace.xml
+=======
+/.idea/cookiecutter-dash-ui.iml
+>>>>>>> 60baa65 (Initial commit)
