@@ -4,7 +4,7 @@ A cookiecutter to generate IDM RSE Dash app skeletons.
 Python ≥ 3.6 is required. A virtual environment is recommended (like virtualenv).
 ```
 pip3 install cookiecutter
-cookiecutter https://github.com/InstituteforDiseaseModeling/cookiecutter-dash-layout.git
+cookiecutter https://github.com/InstituteforDiseaseModeling/cookiecutter-dash-ui.git
 ```
 You will be asked about your basic project info. This info will be used in your new project.
 
