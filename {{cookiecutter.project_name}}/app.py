@@ -1,11 +1,10 @@
 import dash
-import dash_core_components as dcc
+from dash import dcc, html, Input, Output
 import dash_bootstrap_components as dbc
-import dash_html_components as html
 from components.about import about
 from components.header import header
 from components.footer import footer
-from components.sample_chart import sample_chart
+from components.sample_chart import SampleChartAIO
 from components.page_not_found import page_not_found
 
 external_stylesheets = [dbc.themes.BOOTSTRAP]
@@ -19,6 +18,7 @@ app = dash.Dash(__name__,
                 external_scripts=external_scripts,
                 suppress_callback_exceptions=True)
 
+
 # A function to wrap a component with header and footer
 def layout(component=None):
     return html.Div(children=[
@@ -30,6 +30,7 @@ def layout(component=None):
 
 # define the home_page
 # replace sample_chart with your own chart or component
+sample_chart = SampleChartAIO()
 home_page = layout(sample_chart)
 
 # define the about_page
@@ -46,8 +47,8 @@ app.layout = html.Div([
 
 
 # add callbacks for page navigation
-@app.callback(dash.dependencies.Output('page-content', 'children'),
-              [dash.dependencies.Input('url', 'pathname')])
+@app.callback(Output('page-content', 'children'),
+              [Input('url', 'pathname')])
 def display_page(pathname):
     if pathname == '/':
         return home_page
