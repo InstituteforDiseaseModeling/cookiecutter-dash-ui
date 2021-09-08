@@ -40,6 +40,7 @@ about_page = layout(about)
 error_page = layout(page_not_found)
 
 # initiate the app layout
+app.title = "{{cookiecutter.project_name}}"
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     html.Div(id='page-content')
