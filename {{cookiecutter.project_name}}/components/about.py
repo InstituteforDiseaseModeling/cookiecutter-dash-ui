@@ -1,19 +1,20 @@
 from dash import html
 
 about_style = {
-    "minWidth": '48rem',
-    "width": '70%',
-    "margin": '0 auto',
+    "minWidth": "48rem",
+    "width": "70%",
+    "margin": "0 auto",
+    "minHeight": "85vh"
 }
 title_style = {
-    "margin": '20px 20px 10px 0px',
+    "margin": "20px 20px 10px 0px",
     "color": "#F1815E",
 }
 content_text_style = {
     "fontFamily": '"Roboto", "Helvetica", "Arial", "sans-serif"',
     "fontSize": 16,
-    "textAlign": 'justify',
-    "textJustify": 'inter-word'
+    "textAlign": "justify",
+    "textJustify": "inter-word"
 }
 
 about = html.Div(style=about_style, children=[
