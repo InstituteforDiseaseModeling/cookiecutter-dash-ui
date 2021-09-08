@@ -11,7 +11,7 @@ footer_style = {
     "width": "100%",
     "backgroundColor": "#24323c",
     "color": "white",
-    "maxHeight": 65,
+    "minHeight": 65,
     "zIndex": 2000
 }
 logo_style = {
