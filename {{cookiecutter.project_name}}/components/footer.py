@@ -60,14 +60,14 @@ footer = html.Footer(style=footer_style, children=[
                          children=[
                              html.A(style=terms_style,
                                     children=[
-                                        html.Span(children=["Terms"])
+                                        html.Span(children=["Terms of Use"])
                                     ],
                                     href="https://www.gatesfoundation.org/Terms-of-Use"
                                     ),
                              html.Br(),
                              html.A(style=terms_style,
                                     children=[
-                                        html.Span(children=["Privacy & Cookies"])
+                                        html.Span(children=["Privacy & Cookies Notice"])
                                     ],
                                     href="https://www.gatesfoundation.org/Privacy-and-Cookies-Notice"
                                     ),
