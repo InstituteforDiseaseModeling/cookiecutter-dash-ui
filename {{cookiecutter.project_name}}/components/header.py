@@ -8,5 +8,6 @@ header = dbc.NavbarSimple(
     brand="{{cookiecutter.project_name}}",
     brand_href="/",
     color="#24323c",
-    dark=True
+    dark=True,
+    className="sticky-top"
 )
