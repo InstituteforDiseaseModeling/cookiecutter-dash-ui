@@ -1,0 +1,49 @@
+._dash-loading-callback {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.content {
+  min-width: 48rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.contentText {
+        font-family: '"Roboto", "Helvetica", "Arial", "sans-serif"';
+        font-size: 16px;
+        text-align: justify;
+        text-justify: inter-word;
+        margin-top: 5px;
+}
+
+.titleText {
+        margin: 20px 20px 10px 0px;
+}
+.title, .titleText {
+  color: #F1815E;
+}
+
+a.nav-link, a.navbar-brand {
+    text-decoration: none;
+}
