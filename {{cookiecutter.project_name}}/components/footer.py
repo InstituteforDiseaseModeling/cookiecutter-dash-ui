@@ -15,7 +15,7 @@ footer_style = {
     "zIndex": 2000
 }
 logo_style = {
-    "display": "inline-bock",
+    "display": "inline-block",
     "margin": "15px 18px 10px 25px",
     "height": 35,
 }
@@ -39,45 +39,45 @@ terms_style = {
     "textOverflow": "ellipsis",
 }
 footer = html.Footer(style=footer_style, children=[
-    dbc.Row(
-        [
-            dbc.Col(
-                html.Img(style=logo_style, src='../assets/bmgf-logo-white.png')
-            ),
-            dbc.Col(
-                [
-                    html.Div(style=copy_text_style,
+    dbc.Row(className="m-0",
+            children=[
+                dbc.Col(
+                    html.Img(style=logo_style, src='../assets/bmgf-logo-white.png')
+                ),
+                dbc.Col(
+                    [
+                        html.Div(style=copy_text_style,
+                                 children=[
+                                     html.Span(f"1999-{current_year} Bill & Melinda Gates Foundation"),
+                                     html.Br(),
+                                     html.Span("All Rights Reserved")
+                                 ]
+                                 ),
+                    ]
+                ),
+                dbc.Col(
+                    html.Div(style=terms_style,
                              children=[
-                                 html.Span(f"1999-{current_year} Bill & Melinda Gates Foundation"),
+                                 html.A(style=terms_style,
+                                        children=[
+                                            html.Span(children=["Terms of Use"])
+                                        ],
+                                        href="https://www.gatesfoundation.org/Terms-of-Use"
+                                        ),
                                  html.Br(),
-                                 html.Span("All Rights Reserved")
+                                 html.A(style=terms_style,
+                                        children=[
+                                            html.Span(children=["Privacy & Cookies Notice"])
+                                        ],
+                                        href="https://www.gatesfoundation.org/Privacy-and-Cookies-Notice"
+                                        ),
                              ]
-                             ),
-                ]
-            ),
-            dbc.Col(
-                html.Div(style=terms_style,
-                         children=[
-                             html.A(style=terms_style,
-                                    children=[
-                                        html.Span(children=["Terms of Use"])
-                                    ],
-                                    href="https://www.gatesfoundation.org/Terms-of-Use"
-                                    ),
-                             html.Br(),
-                             html.A(style=terms_style,
-                                    children=[
-                                        html.Span(children=["Privacy & Cookies Notice"])
-                                    ],
-                                    href="https://www.gatesfoundation.org/Privacy-and-Cookies-Notice"
-                                    ),
-                         ]
-                         )
-            ),
-            dbc.Col(
-                html.Img(style=logo_style, src='../assets/idmlogo55.png')
-            )
+                             )
+                ),
+                dbc.Col(
+                    html.Img(style=logo_style, src='../assets/idmlogo55.png')
+                )
 
-        ]
-    )
+            ]
+            )
 ])
