@@ -3,7 +3,7 @@ from dash import dcc, html, Input, Output
 import dash_bootstrap_components as dbc
 from components.about import about
 from components.header import header
-from components.footer import footer
+from components.footer import FooterAIO
 from components.sample_chart import SampleChartAIO
 from components.page_not_found import page_not_found
 
@@ -24,7 +24,7 @@ def layout(component=None):
     return html.Div(children=[
         header,
         component,
-        footer
+        FooterAIO()
     ])
 
 

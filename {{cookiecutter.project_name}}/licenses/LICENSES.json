@@ -1,0 +1,122 @@
+[
+  {
+    "License": "MIT License",
+    "Name": "Brotli",
+    "Version": "1.0.9"
+  },
+  {
+    "License": "BSD License",
+    "Name": "Flask",
+    "Version": "2.0.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "Flask-Compress",
+    "Version": "1.10.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "Jinja2",
+    "Version": "3.0.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "MarkupSafe",
+    "Version": "2.0.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "Werkzeug",
+    "Version": "2.0.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "click",
+    "Version": "8.0.1"
+  },
+  {
+    "License": "BSD License",
+    "Name": "colorama",
+    "Version": "0.4.4"
+  },
+  {
+    "License": "MIT License",
+    "Name": "dash",
+    "Version": "2.0.0rc2"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "dash-bootstrap-components",
+    "Version": "0.13.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "dash-core-components",
+    "Version": "2.0.0rc1"
+  },
+  {
+    "License": "MIT",
+    "Name": "dash-html-components",
+    "Version": "2.0.0rc1"
+  },
+  {
+    "License": "MIT",
+    "Name": "dash-renderer",
+    "Version": "1.9.1"
+  },
+  {
+    "License": "MIT",
+    "Name": "dash-table",
+    "Version": "5.0.0rc1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "docopt",
+    "Version": "0.6.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "future",
+    "Version": "0.18.2"
+  },
+  {
+    "License": "BSD License",
+    "Name": "itsdangerous",
+    "Version": "2.0.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "pep517",
+    "Version": "0.11.0"
+  },
+  {
+    "License": "BSD License",
+    "Name": "pip-tools",
+    "Version": "6.2.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "plotly",
+    "Version": "5.2.2"
+  },
+  {
+    "License": "Mozilla Public License 2.0 (MPL 2.0)",
+    "Name": "py-make",
+    "Version": "0.1.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "six",
+    "Version": "1.16.0"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "tenacity",
+    "Version": "8.0.1"
+  },
+  {
+    "License": "MIT License",
+    "Name": "tomli",
+    "Version": "1.2.1"
+  }
+]

@@ -17,5 +17,8 @@ run `pip-compile` then finally run `pip install -r requirements.txt`.
 Install the latest version of py charm (2021.2.1 RC or latest). 
 
 #### Manually updating licenses file
-If you install additional third party packages, the licenses file should reflect the change. From the directory
-where `LICENSES.txt` is run `pip-licenses --format=markdown --output-file=LICENSES.txt`
+If you install additional third party packages, the licenses file should reflect the change. 
+To utilize the Makefile commands for updating license files run  
+```
+pymake licenses
+```
