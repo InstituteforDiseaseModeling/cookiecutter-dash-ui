@@ -1,0 +1,52 @@
+name: "Staging: {{cookiecutter.project_name}}"
+
+on:
+  push:
+    branches:
+      # only run this on
+      - 'dev'
+      - 'master'
+      - 'release**'
+    paths:
+      - '{{cookiecutter.project_name}}/**'
+      - 'requirements.txt'
+      - 'dev_requirements.txt'
+      - 'setup.py'
+  workflow_dispatch:
+    branches:
+      # only run this on
+      - 'dev'
+      - 'master'
+      - 'release**'
+    paths:
+      - '{{cookiecutter.project_name}}/**'
+      - 'requirements.txt'
+      - 'dev_requirements.txt'
+      - 'setup.py'
+
+jobs:
+  release_{{cookiecutter.project_name}}:
+    name: "Release {{cookiecutter.project_name}}"
+    runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, 'Bump version: ')"
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.9'
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install setuptools wheel twine bump2version
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+      - name: Build and publish
+        env:
+          TWINE_REPOSITORY_URL: https://packages.idmod.org/api/pypi/idm-pypi-staging/
+          TWINE_USERNAME: ${{ secrets.PYPI_STAGING_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_STAGING_PASSWORD }}
+          DISTUTILS_DEBUG: 1
+        run: |
+          python setup.py sdist bdist_wheel
+          twine upload dist/*
