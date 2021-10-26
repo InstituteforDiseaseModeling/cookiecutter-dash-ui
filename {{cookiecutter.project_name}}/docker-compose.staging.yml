@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - "DEBUG=0"
+    volumes:
+      - ../dash-gene-drive-data:/app/service/csvs
+    container_name: gene_drive_staging
+    ports:
+      - "8050:8050"
+    restart: unless-stopped
