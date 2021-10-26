@@ -1,5 +1,5 @@
 {
   "project_name": "cookiecutter-dash-layout",
-  "version": "1.0.0",
+  "repository_name": "cookiecutter-dash-project",
   "project_description": "dash layout"
 }
