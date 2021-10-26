@@ -1,7 +1,0 @@
-pip-tools
-dash==2.0.0
-dash-renderer
-dash-bootstrap-components==0.13.1
-plotly
-py-make
-pip-licenses
