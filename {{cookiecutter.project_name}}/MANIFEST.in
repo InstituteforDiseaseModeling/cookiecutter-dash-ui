@@ -1,0 +1,7 @@
+include requirements.txt
+include README.md
+recursive-include {{cookiecutter.project_name}}/licenses *.txt *.json
+recursive-include {{cookiecutter.project_name}}/assets *.ico *.png *.css
+recursive-include {{cookiecutter.project_name}}/assets/third_party_scripts *.js
+recursive-include {{cookiecutter.project_name}}/assets/third_party_styles *.css
+recursive-exclude dir tests/**
