@@ -18,8 +18,6 @@ with open (library_licenses_path, "r") as f:
 library_licenses = json.loads(library_licenses_file)
 library_licenses_content = []
 for license in library_licenses:
-    if license["Name"] == "Gene-Drive":
-        license["License"] = "Creative Commons Attribution-ShareAlike"
     ul = html.Ul(
         children=[
             html.Li(
